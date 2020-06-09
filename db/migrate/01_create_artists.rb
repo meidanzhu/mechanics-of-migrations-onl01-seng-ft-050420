@@ -5,7 +5,7 @@ class CreateArtists < ActiveRecord::Migration[5.1]
   def down
   end
 
-  Marshal.load(Marshal.dump(obj_to_copy))ef change
+def change
     create_table :artists do |t|
       t.string :name
       t.string :genre
